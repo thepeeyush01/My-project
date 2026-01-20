@@ -1,159 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Will You Be My Valentine?</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    body{
-      min-height:100vh;
-      background: linear-gradient(135deg, #ff5f6d, #ffc371);
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      color:#fff;
-    }
-
-    .card{
-      background: rgba(255,255,255,0.15);
-      backdrop-filter: blur(10px);
-      border-radius:20px;
-      padding:30px;
-      width:90%;
-      max-width:450px;
-      text-align:center;
-      box-shadow:0 20px 40px rgba(0,0,0,0.3);
-      animation: pop 1s ease;
-    }
-
-    @keyframes pop{
-      from{transform:scale(0.8); opacity:0;}
-      to{transform:scale(1); opacity:1;}
-    }
-
-    .coder-img{
-      width:120px;
-      height:120px;
-      border-radius:50%;
-      object-fit:cover;
-      border:4px solid #fff;
-      margin-bottom:15px;
-    }
-
-    h1{
-      font-size:1.9rem;
-      margin-bottom:10px;
-    }
-
-    .story{
-      font-size:0.95rem;
-      line-height:1.6;
-      opacity:0.95;
-      margin-bottom:20px;
-    }
-
-    .highlight{
-      font-weight:bold;
-      color:#fff;
-    }
-
-    .question{
-      font-size:1.1rem;
-      margin:20px 0;
-    }
-
-    .buttons{
-      display:flex;
-      justify-content:center;
-      gap:15px;
-    }
-
-    .btn{
-      padding:12px 26px;
-      border-radius:30px;
-      border:none;
-      cursor:pointer;
-      font-size:1rem;
-      transition:0.3s;
-    }
-
-    .yes{
-      background:#22c55e;
-      color:#fff;
-      animation: pulse 1.5s infinite;
-    }
-
-    @keyframes pulse{
-      0%{box-shadow:0 0 0 0 rgba(34,197,94,0.7);}
-      70%{box-shadow:0 0 0 15px rgba(34,197,94,0);}
-      100%{box-shadow:0 0 0 0 rgba(34,197,94,0);}
-    }
-
-    .no{
-      background:#ef4444;
-      color:#fff;
-    }
-
-    .no:hover{
-      transform: translateX(12px) rotate(6deg);
-    }
-
-    footer{
-      margin-top:22px;
-      font-size:0.8rem;
-      opacity:0.85;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>From a Coder's Heart</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <div class="card">
-    <img
-      class="coder-img"
-      src="https://cdn-icons-png.flaticon.com/512/924/924915.png"
-      alt="coder">
+<div class="container">
 
-    <h1>Hey… I’m a Coder 💻</h1>
+    <h1>💻 From a Coder’s Heart</h1>
 
-    <div class="story">
-      I may not be good at expressing feelings with words,  
-      because most of my time goes into fixing <span class="highlight">bugs</span>  
-      and writing <span class="highlight">logic</span>.
-      <br><br>
-      But one thing is clear —  
-      <span class="highlight">my heart has already selected you</span>.
-      <br><br>
-      Just like a program without errors feels perfect,  
-      life with you feels <span class="highlight">complete</span>.
-      <br><br>
-      I don’t know what the future holds,  
-      but I know one thing for sure —  
-      <span class="highlight">I want to try… with you.</span> ❤️
+    <div class="typing">
+        if (you == <span>MyValentine</span>) {<br>
+        &nbsp;&nbsp;heart.beat(faster);<br>
+        &nbsp;&nbsp;life.remove("loneliness");<br>
+        &nbsp;&nbsp;love = true;<br>
+        }
     </div>
 
-    <div class="question">
-      So… will you be my Valentine? 💖
-    </div>
+    <div class="heart">❤️</div>
+
+    <p class="message">
+        Hey <span class="name">[Her Name]</span>,<br>
+        I don’t know how to impress with words,<br>
+        so I wrote my feelings in code.<br>
+        My favorite output has always been <span>you</span>.
+    </p>
+
+    <p class="question">
+        Will you be my Valentine? 💖
+    </p>
 
     <div class="buttons">
-      <button class="btn yes">Yes 💕</button>
-      <button class="btn no">No 💔</button>
+        <a href="https://www.instagram.com/_the.peeyush/?subject=Valentine%20Answer&body=Yes%20❤️">
+    <button class="yes">Yes 💕</button>
+</a>
+        <button class="no">No 🙈</button>
     </div>
 
-    <footer>
-      Made with ❤️ &lt;/&gt; by a shy coder
-    </footer>
-  </div>
+    <p class="footer">
+        // Written with logic, compiled with love ❤️
+    </p>
+
+</div>
 
 </body>
-    </html>
-    
+</html>
+
