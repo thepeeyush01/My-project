@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container{
+    background: #020617;
+    color: #e5e7eb;
+    padding: 35px 45px;
+    border-radius: 14px;
+    width: 440px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.45);
+    text-align: center;
+}
+
+h1{
+    color: #fb7185;
+    margin-bottom: 20px;
+}
+
+/* Typing effect */
+.typing{
+    font-family: 'Courier New', monospace;
+    color: #38bdf8;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #38bdf8;
+    width: 0;
+    margin: auto;
+    animation: typing 6s steps(45,end) forwards,
+               blink 0.8s infinite;
+}
+
+.typing span{
+    color: #f472b6;
+}
+
+@keyframes typing{
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink{
+    50% { border-color: transparent; }
+}
+
+/* Heart animation */
+.heart{
+    font-size: 2.5rem;
+    margin: 20px 0;
+    animation: beat 1.2s infinite;
+}
+
+@keyframes beat{
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+}
+
+.message{
+    line-height: 1.7;
+    margin-top: 15px;
+}
+
+.message span{
+    color: #f472b6;
+    font-weight: bold;
+}
+
+.name{
+    color: #facc15;
+}
+
+.question{
+    margin-top: 25px;
+    font-size: 1.2rem;
+    color: #facc15;
+}
+
+/* Buttons */
+.buttons{
+    margin-top: 20px;
+}
+
+button{
+    padding: 10px 22px;
+    margin: 8px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.yes{
+    background: #22c55e;
+    color: #020617;
+}
+
+.yes:hover{
+    background: #16a34a;
+}
+
+.no{
+    background: #fb7185;
+    color: #020617;
+}
+
+.no:hover{
+    transform: translateX(10px);
+}
+
+.footer{
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #94a3b8;
+}
+
+
